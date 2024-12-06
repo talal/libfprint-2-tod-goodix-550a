@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 Name:           libfprint-2-tod-goodix-550a
 Version:        0.0.9
 Release:        %autorelease
