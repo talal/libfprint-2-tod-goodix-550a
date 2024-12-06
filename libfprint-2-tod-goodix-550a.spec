@@ -9,6 +9,8 @@ Source0:        https://github.com/talal/libfprint-2-tod-goodix-550a/archive/ref
 
 BuildRequires:  git
 Requires:       libfprint-tod
+#For installing udev rules
+BuildRequires:  systemd
 
 %description
 Proprietary driver for the Goodix fingerprint reader 27c6:550a, from Lenovo E14 Gen 4 Ubuntu driver.
