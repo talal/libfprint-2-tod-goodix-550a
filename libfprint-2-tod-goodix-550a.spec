@@ -7,7 +7,6 @@ License:        Custom
 URL:            https://download.lenovo.com/pccbbs/mobiles/r1slg01w.zip
 Source0:        https://github.com/talal/libfprint-2-tod-goodix-550a/archive/refs/tags/%{version}.tar.gz
 
-BuildArch:      x86_64
 BuildRequires:  git
 Requires:       libfprint-tod
 
@@ -19,8 +18,8 @@ Proprietary driver for the Goodix fingerprint reader 27c6:550a, from Lenovo E14 
 
 %install
 # Create target directories
-install -pdm 755 %{buildroot}%{_libdir}/libfprint-2/tod-1/
-install -pdm 755 %{buildroot}%{_udevrulesdir}
+install -dm 755 %{buildroot}%{_libdir}/libfprint-2/tod-1/
+install -dm 755 %{buildroot}%{_udevrulesdir}
 
 # Install driver
 install -m 0644 usr/lib/x86_64-linux-gnu/libfprint-2/tod-1/libfprint-tod-goodix-550a-%{version}.so %{buildroot}%{_libdir}/libfprint-2/tod-1/libfprint-tod-goodix-550a-%{version}.so
